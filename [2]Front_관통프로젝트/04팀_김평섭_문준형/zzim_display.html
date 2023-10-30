@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>회원가입 화면 샘플 - Bootstrap</title>
+
+        <!-- Bootstrap CSS -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+
+        <style>
+            body {
+                min-height: 100vh;
+
+                background: -webkit-gradient(
+                    linear,
+                    left bottom,
+                    right top,
+                    from(#92b5db),
+                    to(#1d466c)
+                );
+                background: -webkit-linear-gradient(
+                    bottom left,
+                    #92b5db 0%,
+                    #1d466c 100%
+                );
+                background: -moz-linear-gradient(
+                    bottom left,
+                    #92b5db 0%,
+                    #1d466c 100%
+                );
+                background: -o-linear-gradient(
+                    bottom left,
+                    #92b5db 0%,
+                    #1d466c 100%
+                );
+                background: linear-gradient(
+                    to top right,
+                    #92b5db 0%,
+                    #1d466c 100%
+                );
+            }
+
+            .input-form {
+                max-width: 680px;
+
+                margin-top: 80px;
+                padding: 32px;
+
+                background: #fff;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                border-radius: 10px;
+                -webkit-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+                -moz-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+                box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="input-form-backgroud row">
+                <div class="input-form col-md-12 mx-auto">
+                    
+                    
+
+                    <ul class="nav nav-tabs">
+                    
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">회원정보수정</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">찜영상</a>
+                          </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">내가쓴리뷰</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="follow.html">팔로우</a>
+                          </li>
+                      </ul>
+
+              
+
+
+                      <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <p></p>
+                                <div class="card">
+                                  
+                                  <img src="img/영상1.PNG" alt="" />
+                                  <div class="card-body">
+                                    
+                                    
+                                    <p class="card-text">[ENG/ 전신 올인원 운동] 유튜브에서 다이어트 전신운동 찾았어요? 이제 딱 이거 하나만 해요! l diet workoutㅣ다노티비</p>
+                                    <div class="form-row float-right ">
+                                    <a href="#" class="btn btn-outline-warning">보기</a>
+                                    &nbsp;
+                                    <a href="#" class="btn btn-outline-danger">삭제</a></div>
+                                  </div>
+                                </div>
+                              </div>
+                          <div class="col-6">
+                            <p></p>
+                            <div class="card">
+                              
+                              <img src="img/영상2.PNG" alt="" />
+                              <div class="card-body">
+
+                                <p class="card-text">하루 15분! 전신 칼로리 불태우는 다이어트 운동</p>
+                                <div class="form-row float-right ">
+                                    <a href="#" class="btn btn-outline-warning">보기</a>
+                                    &nbsp;
+                                    <a href="#" class="btn btn-outline-danger">삭제</a></div>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                        </div>
+                      </div>
+   
+
+     
+
+        
+                
+
+                          
+           
+        <script>
+            window.addEventListener(
+                "load",
+                () => {
+                    const forms =
+                        document.getElementsByClassName("validation-form");
+
+                    Array.prototype.filter.call(forms, (form) => {
+                        form.addEventListener(
+                            "submit",
+                            function (event) {
+                                if (form.checkValidity() === false) {
+                                    event.preventDefault();
+                                    event.stopPropagation();
+                                }
+
+                                form.classList.add("was-validated");
+                            },
+                            false
+                        );
+                    });
+                },
+                false
+            );
+        </script>
+    </body>
+</html>

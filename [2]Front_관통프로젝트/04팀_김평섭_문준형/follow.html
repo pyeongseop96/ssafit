@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>팔로우</title>
+
+        <!-- Bootstrap CSS -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+
+        <style>
+            body {
+                min-height: 100vh;
+
+                background: -webkit-gradient(
+                    linear,
+                    left bottom,
+                    right top,
+                    from(#92b5db),
+                    to(#1d466c)
+                );
+                background: -webkit-linear-gradient(
+                    bottom left,
+                    #92b5db 0%,
+                    #1d466c 100%
+                );
+                background: -moz-linear-gradient(
+                    bottom left,
+                    #92b5db 0%,
+                    #1d466c 100%
+                );
+                background: -o-linear-gradient(
+                    bottom left,
+                    #92b5db 0%,
+                    #1d466c 100%
+                );
+                background: linear-gradient(
+                    to top right,
+                    #92b5db 0%,
+                    #1d466c 100%
+                );
+            }
+
+            .input-form {
+                max-width: 680px;
+
+                margin-top: 80px;
+                padding: 32px;
+
+                background: #fff;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                border-radius: 10px;
+                -webkit-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+                -moz-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+                box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="input-form-backgroud row">
+                <div class="input-form col-md-12 mx-auto">
+                    
+                    
+
+                    <ul class="nav nav-tabs">
+                    
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">회원정보수정</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="zzim_display.html">찜영상</a>
+                          </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">내가쓴리뷰</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">팔로우</a>
+                          </li>
+                      </ul>
+                      <br>
+                      <div class="card" style="width: 100%;">
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                            <div class="mb-3">팔로잉(2명)</div>
+                            
+                            <div class="mb-3 d-flex flex-row justify-content-between">
+                                
+                                <div style="font-size: 20px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                                      </svg>
+                                      &nbsp;&nbsp;&nbsp;b(이싸피)</div>
+                                <div><a href="#" class="btn btn-outline-danger">취소</a></div>
+                            </div>
+                            <div class="mb-3 d-flex flex-row justify-content-between">
+                                <div style="font-size: 20px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                                      </svg>
+                                      &nbsp;&nbsp;&nbsp;d(박싸피)</div>
+                                <div><a href="#" class="btn btn-outline-danger">취소</a></div>
+                            </div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="mb-3">팔로워(2명)</div>
+                            
+                            <div class="mb-3 d-flex flex-row justify-content-between">
+                                
+                                <div style="font-size: 20px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                                      </svg>
+                                      &nbsp;&nbsp;&nbsp;b(이싸피)</div>
+                                
+                            </div>
+                            <div class="mb-3 d-flex flex-row justify-content-between">
+                                <div style="font-size: 20px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                                      </svg>
+                                      &nbsp;&nbsp;&nbsp;c(김싸피)</div>
+                                
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+
+
+                          
+                        </div>
+                      </div>
+   
+
+     
+
+        
+                
+
+                          
+           
+        <script>
+            window.addEventListener(
+                "load",
+                () => {
+                    const forms =
+                        document.getElementsByClassName("validation-form");
+
+                    Array.prototype.filter.call(forms, (form) => {
+                        form.addEventListener(
+                            "submit",
+                            function (event) {
+                                if (form.checkValidity() === false) {
+                                    event.preventDefault();
+                                    event.stopPropagation();
+                                }
+
+                                form.classList.add("was-validated");
+                            },
+                            false
+                        );
+                    });
+                },
+                false
+            );
+        </script>
+    </body>
+</html>
